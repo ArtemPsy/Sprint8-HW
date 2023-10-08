@@ -29,9 +29,9 @@
         android:paddingVertical="@dimen/layout_padding_vertical">
 
         <TextView
-            android:layout_width="@dimen/button_layout_height"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginStart="@dimen/margin_left"
             android:layout_weight="1"
             android:text="@string/dark_theme"
             android:textColor="@color/black"
@@ -40,9 +40,10 @@
         <Switch
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:paddingVertical="11dp"
-            android:paddingLeft="9dp"
-            android:paddingRight="12dp"
+            android:paddingStart="9dp"
+            android:paddingEnd="12dp"
             tools:ignore="UseSwitchCompatOrMaterialXml" />
     </LinearLayout>
 
@@ -57,7 +58,7 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginStart="@dimen/margin_left"
             android:layout_weight="1"
             android:text="@string/share_app"
             android:textColor="@color/black"
@@ -67,7 +68,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/image_layout_margin"
-            android:src="@drawable/share_settings" />
+            android:src="@drawable/share_settings"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -80,7 +82,7 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginStart="@dimen/margin_left"
             android:layout_weight="1"
             android:text="@string/write_to_support"
             android:textColor="@color/black"
@@ -90,7 +92,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/image_layout_margin"
-            android:src="@drawable/support_settings" />
+            android:src="@drawable/support_settings"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -103,7 +106,7 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginStart="@dimen/margin_left"
             android:layout_weight="1"
             android:text="@string/user_agreemet"
             android:textColor="@color/black"
@@ -113,6 +116,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/image_layout_margin"
-            android:src="@drawable/arrow_forward_settings" />
+            android:src="@drawable/arrow_forward_settings"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
     </LinearLayout>
 </LinearLayout>

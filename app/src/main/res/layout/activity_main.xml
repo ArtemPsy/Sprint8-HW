@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/main_background_blue"
@@ -15,7 +16,7 @@
             android:layout_height="wrap_content"
             android:text="@string/title_of_mainScreen_panel"
             android:textColor="@color/white"
-            android:textSize="@dimen/panel_header_textSize" />
+            android:textSize="@dimen/panel_header_textSize"/>
     </androidx.appcompat.widget.Toolbar>
 
     <Button
@@ -33,7 +34,8 @@
         app:icon="@drawable/search_main"
         app:iconGravity="textStart"
         app:iconPadding="@dimen/icon_padding"
-        app:iconTint="@color/black" />
+        app:iconTint="@color/black"
+        tools:ignore="VisualLintButtonSize" />
 
 
     <Button
@@ -51,7 +53,8 @@
         app:icon="@drawable/library_main"
         app:iconGravity="textStart"
         app:iconPadding="@dimen/icon_padding"
-        app:iconTint="@color/black" />
+        app:iconTint="@color/black"
+        tools:ignore="VisualLintButtonSize" />
 
     <Button
         android:id="@+id/settings_button"
@@ -68,5 +71,6 @@
         app:icon="@drawable/settings_main"
         app:iconGravity="textStart"
         app:iconPadding="@dimen/icon_padding"
-        app:iconTint="@color/black" />
+        app:iconTint="@color/black"
+        tools:ignore="VisualLintButtonSize" />
 </LinearLayout>
