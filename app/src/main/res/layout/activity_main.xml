@@ -1,18 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/main_background_blue"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_of_mainScreen_panel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/panel_header_textSize" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/buttonSearch"
+        style="@style/MainButtonsStyle"
+        android:text="@string/search"
+        app:cornerRadius="@dimen/button_cornerRadius"
+        app:icon="@drawable/search_main"
+        app:iconGravity="textStart"
+        app:iconPadding="@dimen/icon_padding"
+        app:iconTint="@color/black"
+        tools:ignore="VisualLintButtonSize" />
+
+
+    <Button
+        android:id="@+id/buttonLibrary"
+        style="@style/MainButtonsStyle"
+        android:text="@string/media"
+        app:cornerRadius="@dimen/button_cornerRadius"
+        app:icon="@drawable/library_main"
+        app:iconGravity="textStart"
+        app:iconPadding="@dimen/icon_padding"
+        app:iconTint="@color/black"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/buttonSettings"
+        style="@style/MainButtonsStyle"
+        android:text="@string/settings"
+        app:cornerRadius="@dimen/button_cornerRadius"
+        app:icon="@drawable/settings_main"
+        app:iconGravity="textStart"
+        app:iconPadding="@dimen/icon_padding"
+        app:iconTint="@color/black"
+        tools:ignore="VisualLintButtonSize" />
+</LinearLayout>

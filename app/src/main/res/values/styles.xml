@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SelectionTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin_left</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="SelectionIconStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/image_layout_margin</item>
+    </style>
+
+    <style name="MainButtonsStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_layout_height</item>
+        <item name="android:layout_margin">@dimen/button_layout_margin</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+
+    <style name="SelectionBlocksStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingHorizontal">@dimen/layout_padding_horizontal</item>
+        <item name="android:paddingVertical">@dimen/layout_padding_vertical</item>
+    </style>
+</resources>

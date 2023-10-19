@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/arrow_back_settings">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/title_of_settingsScreen_panel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/panel_header_textSize" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout style="@style/SelectionBlocksStyle">
+        <TextView
+            style="@style/SelectionTextStyle"
+            android:text="@string/dark_theme" />
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:paddingVertical="12dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="12dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/SelectionBlocksStyle">
+        <TextView
+            style="@style/SelectionTextStyle"
+            android:text="@string/share_app" />
+        <ImageView
+            style="@style/SelectionIconStyle"
+            android:src="@drawable/share_settings"
+            tools:ignore="ImageContrastCheck" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/SelectionBlocksStyle">
+        <TextView
+            style="@style/SelectionTextStyle"
+            android:text="@string/write_to_support"/>
+        <ImageView
+            style="@style/SelectionIconStyle"
+            android:src="@drawable/support_settings"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/SelectionBlocksStyle">
+        <TextView
+            style="@style/SelectionTextStyle"
+            android:text="@string/user_agreemet" />
+        <ImageView
+            style="@style/SelectionIconStyle"
+            android:src="@drawable/arrow_forward_settings"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+    </LinearLayout>
+</LinearLayout>
