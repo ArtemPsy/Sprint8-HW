@@ -30,13 +30,8 @@
         android:paddingVertical="@dimen/layout_padding_vertical">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_left"
-            android:layout_weight="1"
-            android:text="@string/dark_theme"
-            android:textColor="@color/black"
-            android:textSize="@dimen/text_size" />
+            style="@style/SlectionTextStyle"
+            android:text="@string/dark_theme" />
 
         <Switch
             android:layout_width="wrap_content"
@@ -57,21 +52,15 @@
         android:paddingVertical="@dimen/layout_padding_vertical">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_left"
-            android:layout_weight="1"
-            android:text="@string/share_app"
-            android:textColor="@color/black"
-            android:textSize="@dimen/text_size" />
+            style="@style/SlectionTextStyle"
+            android:text="@string/share_app" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/image_layout_margin"
+            style="@style/SelectionIconStyle"
             android:src="@drawable/share_settings"
-            tools:ignore="ContentDescription,ImageContrastCheck" />
+            tools:ignore="ImageContrastCheck" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -90,12 +79,11 @@
             android:textSize="@dimen/text_size" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/image_layout_margin"
+            style="@style/SelectionIconStyle"
             android:src="@drawable/support_settings"
             tools:ignore="ContentDescription,ImageContrastCheck" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -105,18 +93,11 @@
         android:paddingVertical="@dimen/layout_padding_vertical">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_left"
-            android:layout_weight="1"
-            android:text="@string/user_agreemet"
-            android:textColor="@color/black"
-            android:textSize="@dimen/text_size" />
+            style="@style/SlectionTextStyle"
+            android:text="@string/user_agreemet" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/image_layout_margin"
+            style="@style/SelectionIconStyle"
             android:src="@drawable/arrow_forward_settings"
             tools:ignore="ContentDescription,ImageContrastCheck" />
     </LinearLayout>
