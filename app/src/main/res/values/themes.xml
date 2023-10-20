@@ -1,9 +1,14 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
-    <style name="Base.Theme.Sprint8_HW_Res" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Theme.Sprint9" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
+
+    <style name="MainScreenTheme" parent="Theme.Sprint9">
+        <item name="android:background">@color/backgroundBlue</item>
+        <item name="android:textColor">@color/textColorBlack</item>
     </style>
 
-    <style name="Theme.Sprint8_HW_Res" parent="Base.Theme.Sprint8_HW_Res" />
+    <style name="SettingsScreenTheme" parent="Theme.Sprint9">
+        <item name="android:background">@color/backgroundWhite</item>
+        <item name="android:textColor">@color/textColorBlack</item>
+    </style>
 </resources>

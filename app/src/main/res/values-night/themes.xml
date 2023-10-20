@@ -1,7 +1,13 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Sprint8_HW_Res" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+<resources>
+
+    <style name="Theme.Sprint9" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
+
+    <style name="MainScreenTheme" parent="Theme.Sprint9">
+        <item name="android:background">@color/backgroundDark</item>
+    </style>
+
+    <style name="SettingsScreenTheme" parent="Theme.Sprint9">
+        <item name="android:background">@color/backgroundDark</item>
+        <item name="android:textColor">@color/textColorWhite</item>
     </style>
 </resources>
