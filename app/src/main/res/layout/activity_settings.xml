@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundWhite"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
@@ -35,7 +34,9 @@
             android:paddingVertical="11dp"
             android:paddingStart="9dp"
             android:paddingEnd="12dp"
+
             tools:ignore="UseSwitchCompatOrMaterialXml" />
+
     </LinearLayout>
 
     <LinearLayout style="@style/Settings_LinearLayoutStyle">

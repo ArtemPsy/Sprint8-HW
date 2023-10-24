@@ -10,5 +10,7 @@
     <style name="SettingsScreenTheme" parent="Theme.Sprint9">
         <item name="android:background">@color/backgroundWhite</item>
         <item name="android:textColor">@color/textColorBlack</item>
+        <item name="android:trackTint">@color/switchLightGray</item>
+        <item name="android:thumbTint">@color/switchTextGray</item>
     </style>
 </resources>
