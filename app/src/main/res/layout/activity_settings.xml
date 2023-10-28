@@ -72,6 +72,7 @@
             android:text="@string/user_agreemet" />
 
         <ImageView
+            android:id="@+id/userAgreement"
             style="@style/SelectionIconStyle"
             android:src="@drawable/arrow_forward_settings"
             tools:ignore="ContentDescription,ImageContrastCheck" />
