@@ -43,15 +43,10 @@ class SettingsActivity : AppCompatActivity() {
         reportSupportImage.setOnClickListener {
             val shareIntent = Intent(Intent.ACTION_SENDTO)
             shareIntent.data = Uri.parse("mailto:")
-            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf(email))
-            shareIntent.putExtra(Intent.EXTRA_SUBJECT, headerMail)
-            shareIntent.putExtra(Intent.EXTRA_TEXT, textMail)
+            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf(getString(R.string.email)))
+            shareIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.headerMail))
+            shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.textMail))
             startActivity(shareIntent)
         }
-    }
-    companion object {
-        const val textMail = "Привет, Android-разработка — это круто!"
-        const val headerMail = "Сообщение разработчикам и разработчицам приложения Playlist Maker"
-        const val email = "MedbraT.PSY@yandex.ru"
     }
 }
