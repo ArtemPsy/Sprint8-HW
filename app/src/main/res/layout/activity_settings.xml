@@ -28,13 +28,14 @@
             android:text="@string/dark_theme" />
 
         <Switch
+            android:id="@+id/switchSettings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:minHeight="48dp"
             android:paddingVertical="11dp"
             android:paddingStart="9dp"
             android:paddingEnd="12dp"
-
             tools:ignore="UseSwitchCompatOrMaterialXml" />
 
     </LinearLayout>
@@ -58,6 +59,7 @@
             android:text="@string/write_to_support" />
 
         <ImageView
+            android:id="@+id/supportSettings"
             style="@style/SelectionIconStyle"
             android:src="@drawable/support_settings"
             tools:ignore="ContentDescription,ImageContrastCheck" />

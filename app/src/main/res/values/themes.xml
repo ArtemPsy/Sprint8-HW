@@ -12,5 +12,6 @@
         <item name="android:textColor">@color/textColorBlack</item>
         <item name="android:trackTint">@color/switchLightGray</item>
         <item name="android:thumbTint">@color/switchTextGray</item>
+        <item name="android:checked">false</item>
     </style>
 </resources>

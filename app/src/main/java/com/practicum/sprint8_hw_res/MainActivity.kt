@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.Switch
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -13,11 +14,9 @@ class MainActivity : AppCompatActivity() {
 
 
         val searchButton = findViewById<Button>(R.id.buttonSearch)
-        val buttClickListener: View.OnClickListener = object : View.OnClickListener {
-            override fun onClick(p0: View?) {
-               val searchIntent = Intent(this@MainActivity, SearchActivity::class.java)
-                startActivity(searchIntent)
-            }
+        val buttClickListener: View.OnClickListener = View.OnClickListener {
+            val searchIntent = Intent(this@MainActivity, SearchActivity::class.java)
+            startActivity(searchIntent)
         }
 
         searchButton.setOnClickListener(buttClickListener)
