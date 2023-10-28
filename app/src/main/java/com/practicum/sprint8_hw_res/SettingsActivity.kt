@@ -17,9 +17,6 @@ class SettingsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_settings)
 
         val switch = findViewById<Switch>(R.id.switchSettings)
-        savedInstanceState?.let {
-            switch.isChecked = it.getBoolean("switch")
-        }
 
         switch.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
@@ -34,12 +31,7 @@ class SettingsActivity : AppCompatActivity() {
             onBackPressed()
         }
 
-        savedInstanceState?.let {
-            switch.isChecked = it.getBoolean("switch")
-        }
-
         val reportSupportImage = findViewById<ImageView>(R.id.supportSettings)
-
         reportSupportImage.setOnClickListener {
             val shareIntent = Intent(Intent.ACTION_SENDTO)
             shareIntent.data = Uri.parse("mailto:")
@@ -47,6 +39,14 @@ class SettingsActivity : AppCompatActivity() {
             shareIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.headerMail))
             shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.textMail))
             startActivity(shareIntent)
+        }
+
+        val userAgreement = findViewById<ImageView>(R.id.userAgreement)
+        userAgreement.setOnClickListener {
+            val url = Uri.parse(getString(R.string.userAgreementUrl))
+            startActivity(
+                Intent(Intent.ACTION_VIEW, url)
+            )
         }
     }
 }
