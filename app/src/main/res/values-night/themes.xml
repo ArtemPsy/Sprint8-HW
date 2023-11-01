@@ -1,17 +1,25 @@
 <resources>
 
-    <style name="Theme.Sprint9" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
+    <style name="Theme.Sprint9" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
 
     <style name="MainScreenTheme" parent="Theme.Sprint9">
         <item name="android:background">@color/backgroundDark</item>
     </style>
 
-    <style name="SettingsScreenTheme" parent="Theme.Sprint9">
+    <style name="SecondaryScreens" parent="Theme.Sprint9">
         <item name="android:background">@color/backgroundDark</item>
         <item name="android:textColor">@color/textColorWhite</item>
+    </style>
+
+    <style name="SettingsScreenTheme" parent="SecondaryScreens">
         <item name="android:trackTint">@color/switchBlueLight</item>
         <item name="android:thumbTint">@color/switchBlue</item>
         <item name="android:tint">@color/backgroundWhite</item>
         <item name="android:checked">true</item>
+    </style>
+
+    <style name="secondaryToolbars" parent="SecondaryScreens">
+        <item name="android:fontFamily">@font/ys_display_medium</item>
+        <item name="android:textSize">@dimen/textSizeToolbars</item>
     </style>
 </resources>

@@ -8,17 +8,17 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
+        style="@style/secondaryToolbars"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:navigationIcon="@drawable/arrow_back_settings">
 
         <TextView
+            style="@style/secondaryToolbars"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/ys_display_medium"
-            android:gravity="center_horizontal"
-            android:text="@string/title_of_settingsScreen_panel"
-            android:textSize="@dimen/panel_header_textSize" />
+            android:text="@string/title_of_settingsScreen_panel"/>
+
     </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout style="@style/Settings_LinearLayoutStyle">
@@ -26,12 +26,10 @@
         <TextView
             style="@style/SelectionTextStyle"
             android:text="@string/dark_theme" />
-
         <Switch
             android:id="@+id/switchSettings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:minHeight="48dp"
             android:paddingVertical="11dp"
             android:paddingStart="9dp"

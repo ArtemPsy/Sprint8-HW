@@ -15,4 +15,5 @@
     <dimen name="text_size">16sp</dimen>
     <dimen name="margin_left">16dp</dimen>
     <dimen name="image_layout_margin">12dp</dimen>
+    <dimen name="textSizeToolbars">28sp</dimen>
 </resources>

@@ -16,6 +16,7 @@ class SettingsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
 
+
         val switch = findViewById<Switch>(R.id.switchSettings)
 
         switch.setOnCheckedChangeListener { _, isChecked ->
@@ -27,6 +28,7 @@ class SettingsActivity : AppCompatActivity() {
         }
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
+
         toolbar.setOnClickListener {
             onBackPressed()
         }
