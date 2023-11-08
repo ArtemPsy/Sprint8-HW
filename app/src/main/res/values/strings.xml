@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">Sprint8_HW_Res</string>
+    <string name="app_name">Sprint9</string>
+    <string name="search">Поиск</string>
+    <string name="Title">Playlist maker</string>
+    <string name="media">Медиатека</string>
+    <string name="settings">Настройки</string>
+    <string name="title_of_mainScreen_panel">Playlist maker</string>
+    <string name="title_of_settingsScreen_panel">Настройки</string>
+    <string name="dark_theme">Тёмная тема</string>
+    <string name="share_app">Поделиться приложением</string>
+    <string name="write_to_support">Написать в поддержку</string>
+    <string name="user_agreemet">Пользовательское соглашение</string>
+    <string name="textMail">Привет, Android-разработка — это круто!</string>
+    <string name="headerMail">Сообщение разработчикам и разработчицам приложения Playlist Maker</string>
+    <string name="email">MedbraT.PSY@yandex.ru</string>
+    <string name="userAgreementUrl">https://yandex.ru/legal/practicum_offer/</string>
+    <string name="title_of_searchScreen_panel">Поиск</string>
 </resources>

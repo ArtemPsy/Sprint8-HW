@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SelectionTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin_horizontal_16</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:fontFamily">@font/ys_display_regular</item>
+    </style>
+
+    <style name="SelectionIconStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/image_layout_margin_12</item>
+    </style>
+
+    <style name="Settings_LinearLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingHorizontal">@dimen/layout_padding_horizontal_16</item>
+        <item name="android:paddingVertical">@dimen/layout_padding_vertical_22</item>
+    </style>
+
+    <style name="Main_ButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_layout_height_0</item>
+        <item name="android:layout_margin">@dimen/margin_horizontal_16</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:backgroundTint">@color/backgroundWhite</item>
+        <item name="android:fontFamily">@font/ys_display_medium</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/textColorBlack</item>
+        <item name="android:textSize">@dimen/text_size_28</item>
+    </style>
+
+</resources>

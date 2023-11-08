@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/secondaryToolbars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/arrow_back_settings">
+
+        <TextView
+            style="@style/secondaryToolbars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/greyFieldWater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_horizontal_16"
+        android:layout_marginVertical="@dimen/margin_vertical_8"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/searchIconsTheme"
+            android:id="@+id/search_pressed_icon"
+            android:src="@drawable/search_icon_grey" />
+
+        <EditText
+            style="@style/searchTextFieldTheme"
+            android:id="@+id/search_text_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:lines="1"
+            android:hint="@string/search" />
+
+        <ImageView
+            style="@style/searchIconsTheme"
+            android:id="@+id/cleaning_pressed_icon"
+            android:src="@drawable/light_mode"
+            android:visibility="invisible"/>
+    </LinearLayout>
+</LinearLayout>
