@@ -20,6 +20,24 @@
 
     <style name="secondaryToolbars" parent="SecondaryScreens">
         <item name="android:fontFamily">@font/ys_display_medium</item>
-        <item name="android:textSize">@dimen/textSizeToolbars</item>
+        <item name="android:textSize">@dimen/text_size_28</item>
+    </style>
+
+    <style name="greyFieldWater" parent="Theme.Sprint9">
+        <item name="android:background">@drawable/rounded_corners_dark</item>
+
+    </style>
+
+    <style name="searchIconsTheme" parent="greyFieldWater">
+        <item name="android:backgroundTint">@color/backgroundWhite</item>
+        <item name="android:tint">@color/textColorBlack</item>
+        <item name="android:paddingHorizontal">@dimen/padding_horizontal_12</item>
+        <item name="android:paddingVertical">@dimen/padding_vertical_10</item>
+    </style>
+
+    <style name="searchTextFieldTheme" parent="searchIconsTheme">
+        <item name="android:textColor">@color/textColorBlack</item>
+        <item name="android:fontFamily">@font/ys_display_regular</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
     </style>
 </resources>

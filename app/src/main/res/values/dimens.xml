@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="button_layout_margin">16dp</dimen>
-    <dimen name="textview_padding_left">12dp</dimen>
-    <dimen name="textview_padding_top">12dp</dimen>
-    <dimen name="textview_padding_right">52dp</dimen>
-    <dimen name="textview_padding_bottom">12dp</dimen>
-    <dimen name="icon_padding">8dp</dimen>
-    <dimen name="button_text_size">26sp</dimen>
-    <dimen name="button_cornerRadius">16dp</dimen>
-    <dimen name="panel_header_textSize">28sp</dimen>
-    <dimen name="button_layout_height">0dp</dimen>
-    <dimen name="layout_padding_horizontal">16dp</dimen>
-    <dimen name="layout_padding_vertical">22dp</dimen>
-    <dimen name="text_size">16sp</dimen>
-    <dimen name="margin_left">16dp</dimen>
-    <dimen name="image_layout_margin">12dp</dimen>
-    <dimen name="textSizeToolbars">28sp</dimen>
+    <dimen name="margin_horizontal_16">16dp</dimen>
+    <dimen name="textview_padding_left_12">12dp</dimen>
+    <dimen name="textview_padding_top_12">12dp</dimen>
+    <dimen name="textview_padding_right_52">52dp</dimen>
+    <dimen name="textview_padding_bottom_12">12dp</dimen>
+    <dimen name="padding_horizontal_12">12dp</dimen>
+    <dimen name="text_size_28">28sp</dimen>
+    <dimen name="button_cornerRadius_16">16dp</dimen>
+    <dimen name="button_layout_height_0">0dp</dimen>
+    <dimen name="layout_padding_horizontal_16">16dp</dimen>
+    <dimen name="layout_padding_vertical_22">22dp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="image_layout_margin_12">12dp</dimen>
+    <dimen name="margin_vertical_8">8dp</dimen>
+    <dimen name="padding_vertical_10">10dp</dimen>
+    <dimen name="radius_8">8dp</dimen>
 </resources>

@@ -19,16 +19,34 @@
             android:text="@string/search" />
     </androidx.appcompat.widget.Toolbar>
 
-    <TextView
-        android:background="@drawable/rounded_corners_light"
+    <LinearLayout
+        style="@style/greyFieldWater"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="8dp"
-        android:layout_marginHorizontal="16dp"
-        android:paddingLeft="14dp"
-        android:paddingVertical="12dp"
+        android:layout_marginHorizontal="@dimen/margin_horizontal_16"
+        android:layout_marginVertical="@dimen/margin_vertical_8"
+        android:orientation="horizontal">
 
-        android:drawableLeft="@drawable/search_icon_grey"
-        android:drawablePadding="4dp"
-        android:text="@string/search" />
+        <ImageView
+            style="@style/searchIconsTheme"
+            android:id="@+id/search_pressed_icon"
+            android:src="@drawable/search_icon_grey" />
+
+        <EditText
+            style="@style/searchTextFieldTheme"
+            android:id="@+id/search_text_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:lines="1"
+            android:hint="@string/search" />
+
+        <ImageView
+            style="@style/searchIconsTheme"
+            android:id="@+id/cleaning_pressed_icon"
+            android:src="@drawable/light_mode"
+            android:visibility="invisible"/>
+    </LinearLayout>
 </LinearLayout>
